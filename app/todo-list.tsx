@@ -7,8 +7,14 @@ import { Todo } from '@/lib/db/queries';
 import { error } from 'console';
 import { MdDoneOutline, MdRemoveDone  } from "react-icons/md";
 
+// Define the state type
+interface FormState {
+  input?: string;
+  message: string;
+  error?: boolean;
+}
 
-export async function handelForm (prevState, formData) {
+export async function handelForm(prevState: FormState, formData: FormData): Promise<FormState> {
       const actionType = formData.get('_action');
       
       if (actionType === 'add') {

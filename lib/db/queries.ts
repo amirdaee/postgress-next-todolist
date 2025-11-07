@@ -17,7 +17,7 @@ export async function getTodos() {
       updatedAt: todos.updatedAt,
     })
     .from(todos)
-    .orderBy(asc(todos.is_complete, desc(todos.updatedAt)));
+    .orderBy(asc(todos.is_complete), desc(todos.updatedAt));
 }
 
 export async function getUsers() {

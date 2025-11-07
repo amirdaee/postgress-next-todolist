@@ -13,17 +13,28 @@ const fakeUsers = [
     bio: 'توسعه‌دهنده full-stack با ۵ سال تجربه در زمینه وب',
     phone: '09123456789'
   },
-  // ... سایر کاربران
+  {
+    id: 2,
+    name: 'سارا احمدی',
+    email: 'sara@example.com',
+    role: 'کاربر',
+    status: 'فعال',
+    joinDate: '۱۴۰۲/۰۲/۲۰',
+    bio: 'طراح UI/UX',
+    phone: '09129876543'
+  }
 ];
 
-interface UserDetailPageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function UserDetailPage({ params }: UserDetailPageProps) {
-  const user = fakeUsers.find(u => u.id === parseInt(params.id));
+// Remove the interface and make the component async
+export default async function UserDetailPage({ 
+  params 
+}: { 
+  params: Promise<{ id: string }> 
+}) {
+  // Await the params promise
+  const { id } = await params;
+  
+  const user = fakeUsers.find(u => u.id === parseInt(id));
 
   if (!user) {
     notFound();
