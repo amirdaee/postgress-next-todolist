@@ -9,7 +9,7 @@
 ## Getting Started
 
 ```bash
-git clone https://github.com/amirdaee/postgres-next-todo
+git clone https://github.com/amirdaee/postgress-next-todolist
 cd postgres-next-todo
 pnpm install
 ```
