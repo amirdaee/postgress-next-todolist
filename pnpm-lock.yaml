@@ -47,6 +47,9 @@ importers:
       react-dom:
         specifier: 19.0.0-rc-2d16326d-20240930
         version: 19.0.0-rc-2d16326d-20240930(react@19.0.0-rc-2d16326d-20240930)
+      react-icons:
+        specifier: ^5.5.0
+        version: 5.5.0(react@19.0.0-rc-2d16326d-20240930)
       tailwindcss:
         specifier: 4.0.0-beta.4
         version: 4.0.0-beta.4
@@ -910,6 +913,11 @@ packages:
     peerDependencies:
       react: 19.0.0-rc-2d16326d-20240930
 
+  react-icons@5.5.0:
+    resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
+    peerDependencies:
+      react: '*'
+
   react@19.0.0-rc-2d16326d-20240930:
     resolution: {integrity: sha512-XeaCnXQ5lZoOtPaVZPDEcx2TUDDt6JPIEviTKhIBkQNAYKcQkAT6SPbEqxC2KqkLPnilvPi9zz+c8iikstrwRg==}
     engines: {node: '>=0.10.0'}
@@ -1563,6 +1571,10 @@ snapshots:
     dependencies:
       react: 19.0.0-rc-2d16326d-20240930
       scheduler: 0.25.0-rc-2d16326d-20240930
+
+  react-icons@5.5.0(react@19.0.0-rc-2d16326d-20240930):
+    dependencies:
+      react: 19.0.0-rc-2d16326d-20240930
 
   react@19.0.0-rc-2d16326d-20240930: {}
 
