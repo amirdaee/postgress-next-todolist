@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "db:setup": "npx tsx lib/db/setup.ts",
+    "db:seed": "npx tsx lib/db/seed.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "npx tsx lib/db/migrate.ts",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@fontsource-variable/vazirmatn": "^5.2.8",
+    "@tailwindcss/postcss": "4.0.0-beta.4",
+    "@types/node": "^22.10.1",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.36.4",
+    "drizzle-seed": "^0.1.2",
+    "lucide-react": "^0.465.0",
+    "next": "15.0.4-canary.36",
+    "postgres": "^3.4.5",
+    "react": "19.0.0-rc-2d16326d-20240930",
+    "react-dom": "19.0.0-rc-2d16326d-20240930",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "4.0.0-beta.4",
+    "typescript": "^5.7.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.28.1"
+  }
+}
